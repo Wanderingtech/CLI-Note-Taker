@@ -1,6 +1,6 @@
-var router = require(express.Router())
+var router = require("express").Router()
 var path = require("path")
-var fs = requires("fs")
+var fs = require("fs")
 var db = require("../db/db.json")
 
 router.get("/api/notes",function(req,res){
@@ -36,3 +36,4 @@ router.delete("/api/notes/:id",function(req,res){
         res.json(db)
     })
 })
+module.exports = router
