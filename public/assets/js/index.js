@@ -61,6 +61,8 @@ console.log(newNote)
     renderActiveNote();
   });
   getAndRenderNotes();
+  $noteTitle.val("");
+  $noteText.val("");
 };
 
 // Delete the clicked note
@@ -78,6 +80,9 @@ const handleNoteDelete = function (event) {
     getAndRenderNotes();
     renderActiveNote();
   });
+  getAndRenderNotes();
+  $noteTitle.val("");
+  $noteText.val("");
 };
 
 // Sets the activeNote and displays it
